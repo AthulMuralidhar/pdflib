@@ -160,9 +160,11 @@ const char * _PDF_get_errmsg(PDF *p);
 
 int _PDF_get_errnum(PDF *p);
 
-const char * _PDF_get_parameter(PDF *p, const char *key, double modifier);
+// FIXME
+// const char * _PDF_get_parameter(PDF *p, const char *key, double modifier);
 
-double _PDF_get_value(PDF *p, const char *key, double modifier);
+// FIXME
+// double _PDF_get_value(PDF *p, const char *key, double modifier);
 
 double _PDF_info_font(PDF *p, int font, const char *keyword, const char *optlist);
 
@@ -246,7 +248,7 @@ void _PDF_set_layer_dependency(PDF *p, const char *type, const char *optlist);
 
 void _PDF_set_option(PDF *p, const char *optlist);
 
-void _PDF_set_option(PDF *p, const char *key, const char *value);
+// void _PDF_set_option(PDF *p, const char *key, const char *value);
 
 void _PDF_set_text_pos(PDF *p, double x, double y);
 
@@ -264,13 +266,15 @@ void _PDF_setfont(PDF *p, int font, double fontsize);
 
 void _PDF_setlinecap(PDF *p, int linecap);
 
-void _PDF_setlinejoin(PDF *p, int linejoin);
+// FIXME
+// void _PDF_setlinejoin(PDF *p, int linejoin);
 
 void _PDF_setlinewidth(PDF *p, double width);
 
 void _PDF_setmatrix(PDF *p, double a, double b, double c, double d, double e, double f);
 
-void _PDF_setmiterlimit(PDF *p, double miter);
+// FIXME
+// void _PDF_setmiterlimit(PDF *p, double miter);
 
 int _PDF_shading(PDF *p, const char *shtype, double x_0, double y_0, double x_1, double y_1, double c_1, double c_2, double c_3, double c_4, const char *optlist);
 
@@ -298,14 +302,15 @@ void _PDF_suspend_page(PDF *p, const char *optlist);
 
 void _PDF_translate(PDF *p, double tx, double ty);
 
-const char * _PDF_utf16_to_utf8(PDF *p, const char *utf16string, int len, int *size);
+// FIXME
+// const char * _PDF_utf16_to_utf8(PDF *p, const char *utf16string, int len, int *size);
 
-const char * _PDF_utf8_to_utf16(PDF *p, const char *utf8string, const char *ordering, int *size);
+// const char * _PDF_utf8_to_utf16(PDF *p, const char *utf8string, const char *ordering, int *size);
 
-const char * _PDF_utf32_to_utf8(PDF *p, const char *utf32string, int len, int *size);
+// const char * _PDF_utf32_to_utf8(PDF *p, const char *utf32string, int len, int *size);
 
-const char * _PDF_utf8_to_utf32(PDF *p, const char *utf8string, const char *ordering, int *size);
+// const char * _PDF_utf8_to_utf32(PDF *p, const char *utf8string, const char *ordering, int *size);
 
-const char * _PDF_utf16_to_utf32(PDF *p, const char *utf16string, int len, const char *ordering, int *size);
+// const char * _PDF_utf16_to_utf32(PDF *p, const char *utf16string, int len, const char *ordering, int *size);
 
-const char * _PDF_utf32_to_utf16(PDF *p, const char *utf32string, int len, const char *ordering, int *size);
+// const char * _PDF_utf32_to_utf16(PDF *p, const char *utf32string, int len, const char *ordering, int *size);

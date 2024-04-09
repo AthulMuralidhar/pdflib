@@ -31,14 +31,14 @@ func _cgoCheckPointer(interface{}, interface{})
 //go:linkname _cgoCheckResult runtime.cgoCheckResult
 func _cgoCheckResult(interface{})
 
-//go:cgo_import_static _cgo_ef0f50123b0e_Cfunc_PDF_new
-//go:linkname __cgofn__cgo_ef0f50123b0e_Cfunc_PDF_new _cgo_ef0f50123b0e_Cfunc_PDF_new
-var __cgofn__cgo_ef0f50123b0e_Cfunc_PDF_new byte
-var _cgo_ef0f50123b0e_Cfunc_PDF_new = unsafe.Pointer(&__cgofn__cgo_ef0f50123b0e_Cfunc_PDF_new)
+//go:cgo_import_static _cgo_58fa66ab5757_Cfunc_PDF_new
+//go:linkname __cgofn__cgo_58fa66ab5757_Cfunc_PDF_new _cgo_58fa66ab5757_Cfunc_PDF_new
+var __cgofn__cgo_58fa66ab5757_Cfunc_PDF_new byte
+var _cgo_58fa66ab5757_Cfunc_PDF_new = unsafe.Pointer(&__cgofn__cgo_58fa66ab5757_Cfunc_PDF_new)
 
 //go:cgo_unsafe_args
 func _Cfunc_PDF_new() (r1 *_Ctype_struct_PDF_s) {
-	_cgo_runtime_cgocall(_cgo_ef0f50123b0e_Cfunc_PDF_new, uintptr(unsafe.Pointer(&r1)))
+	_cgo_runtime_cgocall(_cgo_58fa66ab5757_Cfunc_PDF_new, uintptr(unsafe.Pointer(&r1)))
 	if _Cgo_always_false {
 	}
 	return

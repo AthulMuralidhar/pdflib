@@ -3,16 +3,13 @@
 //line /home/athul/pdflib/pdflib10/cmd/main.go:1:1
 package main
 
-
-
-
-// #cgo LDFLAGS: -L /home/athul/pdflib/pdflib10/lib/ -lpdf-linux
+// #cgo LDFLAGS: -L /home/athul/pdflib/pdflib10/lib/ -lpdf-linux -lm  -lstdc++
 // #include "pdflib.h"
 // #include "golang.h"
 import _ "unsafe"
 
-
 func main() {
-	_ = ( /*line :13:6*/_Cfunc_PDF_new /*line :13:14*/)();
+	// -lm is for math.h
+	_ = ( /*line :10:6*/_Cfunc_PDF_new /*line :10:14*/)();
 
 }

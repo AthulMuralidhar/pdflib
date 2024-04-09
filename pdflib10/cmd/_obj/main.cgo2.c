@@ -21,7 +21,7 @@ static size_t _GoStringLen(_GoString_ s) { return (size_t)s.n; }
 __attribute__ ((unused))
 static const char *_GoStringPtr(_GoString_ s) { return s.p; }
 
-#line 6 "/home/athul/pdflib/pdflib10/cmd/main.go"
+#line 3 "/home/athul/pdflib/pdflib10/cmd/main.go"
 
  #include "pdflib.h"
  #include "golang.h"
@@ -72,7 +72,7 @@ extern char* _cgo_topofstack(void);
 
 CGO_NO_SANITIZE_THREAD
 void
-_cgo_ef0f50123b0e_Cfunc_PDF_new(void *v)
+_cgo_58fa66ab5757_Cfunc_PDF_new(void *v)
 {
 	struct {
 		PDF* r;
