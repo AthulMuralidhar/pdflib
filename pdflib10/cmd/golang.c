@@ -83,9 +83,9 @@ void _PDF_begin_font(PDF *p, const char *fontname, int len, double a, double b, 
 	PDF_CATCH(p) {}
 }
 
-void _PDF_begin_glyph_ext(PDF *p, const char *glyphname, double wx, double llx, double lly, double urx, double ury)
+void _PDF_begin_glyph_ext(PDF *p, int uv, const char *optlist)
 {
-	PDF_TRY(p) { PDF_begin_glyph_ext(p, glyphname, wx, llx, lly, urx, ury); }
+	PDF_TRY(p) { PDF_begin_glyph_ext(p, uv, optlist); }
 	PDF_CATCH(p) {}
 }
 
@@ -114,9 +114,9 @@ void _PDF_begin_page_ext(PDF *p, double width, double height, const char *optlis
 	PDF_CATCH(p) {}
 }
 
-int _PDF_begin_pattern_ext(PDF *p, double width, double height, double xstep, double ystep, int painttype)
+int _PDF_begin_pattern_ext(PDF *p, double width, double height,  const char *optlist)
 {
-	PDF_TRY(p) { return PDF_begin_pattern_ext(p, width, height, xstep, ystep, painttype); }
+	PDF_TRY(p) { return PDF_begin_pattern_ext(p, width, height, optlist); }
 	PDF_CATCH(p) {}
 	return 1;
 }
